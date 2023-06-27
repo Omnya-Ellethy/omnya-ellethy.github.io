@@ -63,7 +63,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-/* section #text
+section #text
 {
     position: absolute;
     color: #094b65;
@@ -79,4 +79,4 @@ section #text span
     font-weight: 400;
     font-family: 'poppins', sans-serif;
 
-} */
+}
