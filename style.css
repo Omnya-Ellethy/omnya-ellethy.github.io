@@ -71,6 +71,8 @@ section #text
     text-align: center;
     line-height: 0.55em;
     font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+
 }
 section #text span
 {
@@ -79,4 +81,35 @@ section #text span
     font-weight: 400;
     font-family: 'poppins', sans-serif;
 
+}
+#btn
+{
+
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    background: #ff0;
+    color: #094b65;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translateY(100px);
+
+}
+.sec
+{
+    position: relative;
+    padding: 100px;
+    background: #fff;
+}
+.sec h2
+{
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 3.5em;
+    color: #fff;
 }
