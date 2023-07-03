@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif, 'poppins'}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #000000;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.w3-Poppins{font-family: 'poppins', sans-serif;}
+.w3-container2{padding:0.01em 16px}
+.w3-text-navy-head{color:#094b65; font-weight: 600; font-family: Poppins; margin-bottom: 10px;opacity:0.80!important}
+.w3-halfffe{float:right ;height:100%}
+.w3-center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+/* .w3-image2{width:100%;height:auto}img{vertical-align:middle}a{color:inherit} */
+
+#home h1{
+    color: rgb(200, 170, 208);
+    font-family: Poppins;
+    font-weight: 600;
+}
+#home span{
+    color: #094b65;
+    font-family: Poppins;
+}
+#home p{
+    color: #094b65;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+.about-text {
+    float: left;
+    padding: 15px;
+    border: 1px;
+}
+
+.about-image {
+    float: left;
+    margin-bottom: 20px; /* Adjust the value as needed */
+  }
+  
+  .about-image img {
+    width: 65%;
+    position:sticky;
+    height: auto;
+    display: block;
+  }
+.skill-icon{
+    position:relative;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);z-index:2;width: 50%;
+}
+.icon-container {
+    margin-bottom: 30px; /* Increase vertical distance between images */
+  }
+/* ...........social contact......*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.social-icon{
+    color: #aaa;
+    transition: color 0.2s;
+    margin: 0 5px;
+    /* position: relative; */
+}
+.social-icon:hover{
+    color: rgb(164, 130, 174);
+
+}
+.section-heading {
+    text-align: center;
+  }

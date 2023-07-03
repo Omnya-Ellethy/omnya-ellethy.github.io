@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OmnyaEllethy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"> Omnya Ellethy </a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Destination</a></li>
+        </ul>
+    </header>
+    
+    <section>
+        <h2 id="text"><span>Welcome to my</span><br>world</h2>
+        <img src="icons8-bird-90.png" id="bird1">
+        <img src="icons8-bird-90.png" id="bird2">
+        <img src="Lovepik_com-401404860-lavender.png" id="lavender">
+
+        <!-- <a href="#" id="btn">Explore</a> -->
+    </section>
+
+    <!-- ...........info about me section.......... -->
+    <section>
+        <div class="info">
+            <h1>I am <span> Omnya Ellethy</span></h1>
+            <h1>I'm a Software Engineer</h1>
+            <p>coach at Logic club, Intern at SilverKey technologies.<br>loves healthcare & non-healthcare applications<br> that give meaning to users and be helpful to them <br>cause technology meant to provide us easier <br>and meaningful life. love to design anything & everything,<br> care about details.</p>
+        </div>
+        <div class="img-box">
+            <img src="Omnya.jpeg" class="me-img">
+        </div>
+    </section>
+
+    <!-- ...........Myskills section.......... -->
+
+<section>
+    <div class="mySkills">
+        <div class="skillsHeader">
+            <h1>My skills</h1>
+        </div>
+        <div class="container">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://github.com/devicons/devicon/raw/master/icons/python/python-original-wordmark.svg" class="skill-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://github.com/devicons/devicon/raw/master/icons/nodejs/nodejs-original-wordmark.svg" class="skill-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="https://github.com/devicons/devicon/raw/master/icons/mongodb/mongodb-original-wordmark.svg" class="skill-icon">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="	https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg" class="skill-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="social-icon" href="https://twitter.com/OmEly0" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://www.linkedin.com/in/omnya-ellethy20/" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a class="social-icon" href="https://github.com/Omnya-Ellethy" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </div>
+</section>
+
+
+<script>
+    let text = document.getElementById('text');
+    let bird1 = document.getElementById('bird1');
+    let bird2 = document.getElementById('bird2');
+    let btn = document.getElementById('btn');
+    let lavender = document.getElementById('lavender');
+    let header = document.getElementById('header');
+    let lastSection = document.querySelector('section:last-of-type');
+  
+    let maxScrollHeight = lastSection.offsetTop + lastSection.offsetHeight - window.innerHeight;
+  
+    window.addEventListener('scroll', function() {
+      let value = window.scrollY;
+      let windowHeight = window.innerHeight;
+  
+      if (value <= maxScrollHeight) {
+        text.style.top = 50 + value * -0.5 + '%';
+        bird1.style.top = value * 1 + '%';
+        bird1.style.left = value * 5 + 'px';
+        bird2.style.top = value * 1 + '%';
+        bird2.style.right = value * 5 + 'px';
+        lavender.style.top = value * -0.12 + 'px';
+        header.style.top = value * -0.12 + 'px';
+      } else {
+        let diff = value - maxScrollHeight;
+        let offset = Math.max(0, windowHeight - diff);
+        text.style.top = 50 - offset * 0.5 + '%';
+        bird1.style.top = offset + '%';
+        bird1.style.left = offset * 5 + 'px';
+        bird2.style.top = offset + '%';
+        bird2.style.right = offset * 5 + 'px';
+        lavender.style.top = -offset * 0.12 + 'px';
+        header.style.top = -offset * 0.12 + 'px';
+      }
+    });
+  </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
